@@ -24,11 +24,11 @@ span {
     background-color: #EE7023;
 }
 .line {
-    width: 800px;
+    width: 790px;
     height: 1px;
     background-color: #ccc;
     position: absolute;
-    top: 23px;
-    left: calc((100% - 800px) / 2);
+    top: 100px;
+    left: calc((100% - 790px) / 2);
     z-index: 1;
 }

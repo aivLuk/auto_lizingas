@@ -12,9 +12,24 @@ ul {
 
 ul li::before {
     content: '\2666';
-    color: red;
+    color: #EE7023;
     display: inline-block;
     width: 15px;
     height: 15px;
     margin-left: -1em;
+}
+
+.introBtn {
+    background-color: #EE7023;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #EE7023;
+    cursor: pointer;
+}
+
+.logo {
+    width: 160px;
+    margin-top: 10px;
+    margin-left: -12px;   
 }
