@@ -1,0 +1,14 @@
+.summaryContainer {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: calc((100% - 400px)/2);
+}
+
+.resultContainer {
+    width: 350px;
+    background-color: rgb(255, 207, 177);
+    padding: 20px 0;
+
+}

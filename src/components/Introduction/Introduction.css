@@ -5,3 +5,16 @@
     padding-bottom: 20px;
     margin-left: 30px;
 }
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: '\2666';
+    color: red;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: -1em;
+}

@@ -5,9 +5,9 @@ function Question1(props) {
     return (
         <div>
             <div className='inputArea'>
-                <p>Automobilio kaina</p>
+                <p><strong>Automobilio kaina</strong></p>
                 <input type='text' value={props.val} onChange={props.changed}></input>
-                <p>EUR</p>
+                <p><strong>EUR</strong></p>
             </div>
             <div className='buttons'>
                 <div className='button' onClick={props.clicked}>Tęsti</div>

@@ -2,10 +2,18 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    align-items: center; 
 }
 
 input {
     margin: 0 10px;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #EE7023;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #EE7023;
 }
 
 .buttons {
