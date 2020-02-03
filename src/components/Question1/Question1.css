@@ -1,0 +1,26 @@
+.inputArea {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 0 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 30px;
+    padding: 5px 20px;
+    background-color: #EE7023;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    cursor: pointer;
+}

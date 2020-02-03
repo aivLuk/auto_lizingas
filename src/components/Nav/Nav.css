@@ -1,0 +1,22 @@
+.NavContainer {
+    width: 800px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0; 
+    margin-left: calc((100% - 800px) / 2);
+}
+
+span {
+    width: 20px;
+    line-height: 20px;
+    color: #fff;
+    padding: 10px;
+    margin: 0 80px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.active {
+    background-color: #EE7023;
+}
