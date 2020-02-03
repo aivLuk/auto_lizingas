@@ -86,6 +86,62 @@ class App extends Component {
       q4Show: false
     })
   }
+  priceChangedHandler = (e) => {
+    this.setState({
+      questions: [
+        { valueFirst: e.target.value },
+        { valueSecond: this.state.questions[1].valueSecond },
+        { valueThird: this.state.questions[2].valueThird },
+        { valueFourth: this.state.questions[3].valueFourth }
+      ],
+      q1Show: this.state.q1Show,
+      q2Show: this.state.q2Show,
+      q3Show: this.state.q3Show,
+      q4Show: this.state.q4Show
+    })
+  }
+  yearsChangedHandler = (e) => {
+    this.setState({
+      questions: [
+        { valueFirst: this.state.questions[0].valueFirst },
+        { valueSecond: e.target.value },
+        { valueThird: this.state.questions[2].valueThird },
+        { valueFourth: this.state.questions[3].valueFourth }
+      ],
+      q1Show: this.state.q1Show,
+      q2Show: this.state.q2Show,
+      q3Show: this.state.q3Show,
+      q4Show: this.state.q4Show
+    })
+  }
+  baseChangedHandler = (e) => {
+    this.setState({
+      questions: [
+        { valueFirst: this.state.questions[0].valueFirst },
+        { valueSecond: this.state.questions[1].valueSecond },
+        { valueThird: e.target.value },
+        { valueFourth: this.state.questions[3].valueFourth }
+      ],
+      q1Show: this.state.q1Show,
+      q2Show: this.state.q2Show,
+      q3Show: this.state.q3Show,
+      q4Show: this.state.q4Show
+    })
+  }
+  percentageChangedHandler = (e) => {
+    this.setState({
+      questions: [
+        { valueFirst: this.state.questions[0].valueFirst },
+        { valueSecond: this.state.questions[1].valueSecond },
+        { valueThird: this.state.questions[2].valueThird },
+        { valueFourth: e.target.value }
+      ],
+      q1Show: this.state.q1Show,
+      q2Show: this.state.q2Show,
+      q3Show: this.state.q3Show,
+      q4Show: this.state.q4Show
+    })
+  }
 
   render() {
 
@@ -95,20 +151,24 @@ class App extends Component {
         <Nav />
         {this.state.q1Show ? <Question1
           val={this.state.questions[0].valueFirst}
-          clicked={this.q1BtnHandler} /> : null}
+          clicked={this.q1BtnHandler}
+          changed={this.priceChangedHandler} /> : null}
         {this.state.q2Show ? <Question2
           val={this.state.questions[1].valueSecond}
           clickedContinue={this.q2BtnForwardHandler}
-          clickedBack={this.q2BtnBackHandler} /> : null}
+          clickedBack={this.q2BtnBackHandler}
+          changed={this.yearsChangedHandler} /> : null}
         {this.state.q3Show ? <Question3
           valTotal={this.state.questions[0].valueFirst}
           val={this.state.questions[2].valueThird}
           clickedContinue={this.q3BtnForwardHandler}
-          clickedBack={this.q3BtnBackHandler} /> : null}
+          clickedBack={this.q3BtnBackHandler}
+          changed={this.baseChangedHandler} /> : null}
         {this.state.q4Show ? <Question4
           val={this.state.questions[3].valueFourth}
           clickedContinue={this.q4BtnForwardHandler}
-          clickedBack={this.q4BtnBackHandler} /> : null}
+          clickedBack={this.q4BtnBackHandler}
+          changed={this.percentageChangedHandler} /> : null}
         {this.state.summaryShow ? <Summary
           valFirst={this.state.questions[0].valueFirst}
           valSecond={this.state.questions[1].valueSecond}
@@ -117,7 +177,6 @@ class App extends Component {
       </div>
     );
   }
-
 }
 
 export default App;

@@ -6,7 +6,7 @@ function Question1(props) {
         <div>
             <div className='inputArea'>
                 <p>Automobilio kaina</p>
-                <input type='text' value={props.val}></input>
+                <input type='text' value={props.val} onChange={props.changed}></input>
                 <p>EUR</p>
             </div>
             <div className='buttons'>

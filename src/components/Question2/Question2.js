@@ -6,7 +6,7 @@ function Question2(props) {
         <div>
             <div className='inputArea'>
                 <p>Paskolos terminas</p>
-                <select>
+                <select onChange={props.changed}>
                     <option value='1'>{props.val}</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
