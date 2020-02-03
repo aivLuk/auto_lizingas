@@ -38,7 +38,8 @@ class App extends Component {
       q2Show: false,
       q3Show: false,
       q4Show: false,
-      summaryShow: true
+      summaryShow: true,
+      navNotShow: true
     })
   }
   q3BtnBackHandler = () => {
@@ -148,7 +149,11 @@ class App extends Component {
     return (
       <div className="App">
         <Introduction />
-        <Nav />
+        {this.state.navNotShow ? null : <Nav
+          q1show={this.state.q1Show}
+          q2show={this.state.q2Show}
+          q3show={this.state.q3Show}
+          q4show={this.state.q4Show} />}
         {this.state.q1Show ? <Question1
           val={this.state.questions[0].valueFirst}
           clicked={this.q1BtnHandler}
