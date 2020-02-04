@@ -7,6 +7,7 @@ import Question2 from './components/Question2/Question2';
 import Question3 from './components/Question3/Question3';
 import Question4 from './components/Question4/Question4';
 import Summary from './components/Summary/Summary';
+import Error from './components/Error/Error';
 
 class App extends Component {
   state = {
@@ -154,31 +155,37 @@ class App extends Component {
           q2show={this.state.q2Show}
           q3show={this.state.q3Show}
           q4show={this.state.q4Show} />}
-        {this.state.q1Show ? <Question1
-          val={this.state.questions[0].valueFirst}
-          clicked={this.q1BtnHandler}
-          changed={this.priceChangedHandler} /> : null}
-        {this.state.q2Show ? <Question2
-          val={this.state.questions[1].valueSecond}
-          clickedContinue={this.q2BtnForwardHandler}
-          clickedBack={this.q2BtnBackHandler}
-          changed={this.yearsChangedHandler} /> : null}
-        {this.state.q3Show ? <Question3
-          valTotal={this.state.questions[0].valueFirst}
-          val={this.state.questions[2].valueThird}
-          clickedContinue={this.q3BtnForwardHandler}
-          clickedBack={this.q3BtnBackHandler}
-          changed={this.baseChangedHandler} /> : null}
-        {this.state.q4Show ? <Question4
-          val={this.state.questions[3].valueFourth}
-          clickedContinue={this.q4BtnForwardHandler}
-          clickedBack={this.q4BtnBackHandler}
-          changed={this.percentageChangedHandler} /> : null}
-        {this.state.summaryShow ? <Summary
-          valFirst={this.state.questions[0].valueFirst}
-          valSecond={this.state.questions[1].valueSecond}
-          valThird={this.state.questions[2].valueThird}
-          valFourth={this.state.questions[3].valueFourth} /> : null}
+        <div className='bottomContainer'>
+          <Error val={Number(this.state.questions[0].valueFirst)}
+            val4={Number(this.state.questions[3].valueFourth)} />
+          {this.state.q1Show ? <Question1
+            val={this.state.questions[0].valueFirst}
+            clicked={this.q1BtnHandler}
+            changed={this.priceChangedHandler} /> : null}
+          {this.state.q2Show ? <Question2
+            val={this.state.questions[1].valueSecond}
+            clickedContinue={this.q2BtnForwardHandler}
+            clickedBack={this.q2BtnBackHandler}
+            changed={this.yearsChangedHandler} /> : null}
+          {this.state.q3Show ? <Question3
+            valTotal={this.state.questions[0].valueFirst}
+            val={this.state.questions[2].valueThird}
+            clickedContinue={this.q3BtnForwardHandler}
+            clickedBack={this.q3BtnBackHandler}
+            changed={this.baseChangedHandler} /> : null}
+          <Error val4={Number(this.state.questions[3].valueFourth)}
+            val={Number(this.state.questions[0].valueFirst)} />
+          {this.state.q4Show ? <Question4
+            val={this.state.questions[3].valueFourth}
+            clickedContinue={this.q4BtnForwardHandler}
+            clickedBack={this.q4BtnBackHandler}
+            changed={this.percentageChangedHandler} /> : null}
+          {this.state.summaryShow ? <Summary
+            valFirst={this.state.questions[0].valueFirst}
+            valSecond={this.state.questions[1].valueSecond}
+            valThird={this.state.questions[2].valueThird}
+            valFourth={this.state.questions[3].valueFourth} /> : null}
+        </div>
       </div>
     );
   }
