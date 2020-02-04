@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/auto_lizingas/static/css/main.2cbfbeaf.chunk.css",
+    "main.js": "/auto_lizingas/static/js/main.14640dc4.chunk.js",
+    "main.js.map": "/auto_lizingas/static/js/main.14640dc4.chunk.js.map",
+    "runtime-main.js": "/auto_lizingas/static/js/runtime-main.2552e55c.js",
+    "runtime-main.js.map": "/auto_lizingas/static/js/runtime-main.2552e55c.js.map",
+    "static/js/2.9eb2b4a9.chunk.js": "/auto_lizingas/static/js/2.9eb2b4a9.chunk.js",
+    "static/js/2.9eb2b4a9.chunk.js.map": "/auto_lizingas/static/js/2.9eb2b4a9.chunk.js.map",
+    "index.html": "/auto_lizingas/index.html",
+    "precache-manifest.d0e95e7e513cdde12f4f4b703f75f100.js": "/auto_lizingas/precache-manifest.d0e95e7e513cdde12f4f4b703f75f100.js",
+    "service-worker.js": "/auto_lizingas/service-worker.js",
+    "static/css/main.2cbfbeaf.chunk.css.map": "/auto_lizingas/static/css/main.2cbfbeaf.chunk.css.map",
+    "static/js/2.9eb2b4a9.chunk.js.LICENSE.txt": "/auto_lizingas/static/js/2.9eb2b4a9.chunk.js.LICENSE.txt",
+    "static/media/swed.png": "/auto_lizingas/static/media/swed.3d7f6366.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2552e55c.js",
+    "static/js/2.9eb2b4a9.chunk.js",
+    "static/css/main.2cbfbeaf.chunk.css",
+    "static/js/main.14640dc4.chunk.js"
+  ]
+}
