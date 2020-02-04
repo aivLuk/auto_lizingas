@@ -32,3 +32,24 @@ span {
     left: calc((100% - 790px) / 2);
     z-index: 1;
 }
+
+@media (max-width: 900px) {
+    .NavContainer {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .line {
+        width: 88%;
+        left: 6%;
+    }
+}
+
+@media (max-width: 452px) {
+    .line {
+        top: 134px;
+    }
+    span {
+        width: 20px;
+        line-height: 20px;
+    }
+}

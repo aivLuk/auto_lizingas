@@ -33,3 +33,21 @@ ul li::before {
     margin-top: 10px;
     margin-left: -12px;   
 }
+
+@media (max-width: 900px) {
+    .IntroContainer {
+        width: 100%;
+    }
+    .Intro {
+        width: 90%;
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+    ul {
+        text-align: left;
+    }
+    .logo {
+        margin-left: 0;
+    }
+}

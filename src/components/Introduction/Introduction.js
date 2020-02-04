@@ -5,7 +5,7 @@ import Logo from './swed.png';
 
 function Introduction() {
     return (
-        <div style={{ backgroundColor: '#FBF2EA' }}>
+        <div style={{ backgroundColor: '#FBF2EA' }} className='IntroContainer'>
             <div className='Intro'>
                 <img src={Logo} className="logo" />
                 <h1>Automobilių lizingas</h1>

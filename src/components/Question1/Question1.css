@@ -33,3 +33,9 @@ input {
     text-align: center;
     cursor: pointer;
 }
+
+@media (max-width: 452px) {
+    input {
+        width: 80px;
+    }
+}
